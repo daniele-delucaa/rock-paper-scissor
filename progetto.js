@@ -43,9 +43,20 @@ function playRound(playerSelection, computerSelection){
     }
     return string_result;
 }
-/*
+
 const playerSelection = "carta";
-const computerSelection = getComputerChoice();
+game();
+/*
 console.log(playerSelection, computerSelection)
 console.log(playRound(playerSelection, computerSelection));
 */
+// funzione che gioca una partita (5 round)
+function game(){
+    var arr = [];
+    var i;
+    const NUMERO_ROUND = 5;
+    for (i = 0; i <  NUMERO_ROUND; i++){
+        var computerSelection = getComputerChoice();
+        console.log(playRound(playerSelection, computerSelection))
+    }
+}
