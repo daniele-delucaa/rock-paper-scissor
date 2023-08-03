@@ -3,6 +3,7 @@ let mossa = ["carta", "sasso", "forbice"];
 let stringa_mossa = prompt("Inserisci la mossa");
 let playerSelection = stringa_mossa.toLowerCase();
 game();
+
 /*
 console.log(playerSelection, computerSelection)
 console.log(playRound(playerSelection, computerSelection));
