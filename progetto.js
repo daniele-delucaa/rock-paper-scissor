@@ -1,7 +1,6 @@
 let mossa = ["carta", "sasso", "forbice"];
 
-let stringa_mossa = prompt("Inserisci la mossa");
-let playerSelection = stringa_mossa.toLowerCase();
+
 game();
 
 /*
@@ -59,6 +58,8 @@ function game(){
     const NUMERO_ROUND = 5;
     for (i = 0; i <  NUMERO_ROUND; i++){
         var computerSelection = getComputerChoice();
+        let stringa_mossa = prompt("Inserisci la mossa");
+        let playerSelection = stringa_mossa.toLowerCase();
         console.log(playerSelection, computerSelection)
         console.log(playRound(playerSelection, computerSelection));
     }
