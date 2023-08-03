@@ -1,5 +1,13 @@
 let mossa = ["carta", "sasso", "forbice"];
 
+let stringa_mossa = prompt("Inserisci la mossa");
+let playerSelection = stringa_mossa.toLowerCase();
+game();
+/*
+console.log(playerSelection, computerSelection)
+console.log(playRound(playerSelection, computerSelection));
+*/
+
 //funzione che ritorna la mossa (in modo casuale) del computer
 function getComputerChoice(){
     var mossa_avversario;
@@ -44,19 +52,13 @@ function playRound(playerSelection, computerSelection){
     return string_result;
 }
 
-const playerSelection = "carta";
-game();
-/*
-console.log(playerSelection, computerSelection)
-console.log(playRound(playerSelection, computerSelection));
-*/
 // funzione che gioca una partita (5 round)
 function game(){
-    var arr = [];
     var i;
     const NUMERO_ROUND = 5;
     for (i = 0; i <  NUMERO_ROUND; i++){
         var computerSelection = getComputerChoice();
-        console.log(playRound(playerSelection, computerSelection))
+        console.log(playerSelection, computerSelection)
+        console.log(playRound(playerSelection, computerSelection));
     }
 }
