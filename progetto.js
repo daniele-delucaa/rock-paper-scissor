@@ -1,7 +1,29 @@
 let mossa = ["carta", "sasso", "forbice"];
 
+let playerSelection, computerSelection;
+computerSelection = getComputerChoice();
 
-game();
+const buttonRock = document.getElementById("btn-rock");
+const buttonPaper = document.getElementById("btn-paper");
+const buttonScissor = document.getElementById("btn-scissor");
+
+buttonRock.addEventListener("click", ()=>{
+    playerSelection = buttonRock.textContent;
+    console.log(playerSelection, computerSelection); 
+    console.log(playRound(buttonRock.textContent, getComputerChoice()));
+})
+
+buttonPaper.addEventListener("click", ()=>{
+    playerSelection = buttonPaper.textContent;
+    console.log(playRound());
+})
+
+buttonScissor.addEventListener("click", ()=>{
+    playerSelection = buttonScissor.textContent;
+    console.log(playRound());
+})
+
+//game();
 
 /*
 console.log(playerSelection, computerSelection)
@@ -12,7 +34,7 @@ console.log(playRound(playerSelection, computerSelection));
 function getComputerChoice(){
     var mossa_avversario;
     mossa_avversario = mossa[(Math.floor(Math.random() * mossa.length))];
-    return mossa_avversario
+    return mossa_avversario;
 }
 
 //funzione che fa giocare un round del gioco e ritorna se il giocatore ha vinto o perso contro il computer
