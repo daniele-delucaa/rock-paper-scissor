@@ -1,6 +1,7 @@
 let mossa = ["carta", "sasso", "forbice"];
 
-let playerSelection, computerSelection;
+let playerSelection = "";
+let computerSelection = "";
 computerSelection = getComputerChoice();
 
 const buttonRock = document.getElementById("btn-rock");
@@ -9,19 +10,16 @@ const buttonScissor = document.getElementById("btn-scissor");
 
 buttonRock.addEventListener("click", ()=>{
     playerSelection = buttonRock.textContent;
-    console.log(playerSelection, computerSelection); 
-    console.log(playRound(buttonRock.textContent, getComputerChoice()));
 })
 
 buttonPaper.addEventListener("click", ()=>{
     playerSelection = buttonPaper.textContent;
-    console.log(playRound());
 })
 
 buttonScissor.addEventListener("click", ()=>{
     playerSelection = buttonScissor.textContent;
-    console.log(playRound());
 })
+//console.log(playerSelection, computerSelection)
 
 //game();
 
