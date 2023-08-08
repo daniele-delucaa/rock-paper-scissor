@@ -10,16 +10,18 @@ const buttonScissor = document.getElementById("btn-scissor");
 
 buttonRock.addEventListener("click", ()=>{
     playerSelection = buttonRock.textContent;
+    console.log(playRound(playerSelection, computerSelection));
 })
 
 buttonPaper.addEventListener("click", ()=>{
     playerSelection = buttonPaper.textContent;
+    console.log(playRound(playerSelection, computerSelection));
 })
 
 buttonScissor.addEventListener("click", ()=>{
     playerSelection = buttonScissor.textContent;
+    console.log(playRound(playerSelection, computerSelection));
 })
-//console.log(playerSelection, computerSelection)
 
 //game();
 
