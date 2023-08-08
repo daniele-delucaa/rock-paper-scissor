@@ -52,6 +52,7 @@ function playRound(playerSelection, computerSelection){
     return string_result;
 }
 
+/*
 // funzione che gioca una partita (5 round)
 function game(){
     var i;
@@ -64,3 +65,4 @@ function game(){
         console.log(playRound(playerSelection, computerSelection));
     }
 }
+*/
