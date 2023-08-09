@@ -8,6 +8,15 @@ h2{
     line-height: 64px; margin: 0 0 0; padding: 20px 30px; text-align: center; text-transform: uppercase; 
 }
 
+*{
+    background-color: #F0E68C;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
 #all-result{
     display: flex;
     justify-content: center;
@@ -35,12 +44,13 @@ h2{
 #all-moves{
     display: flex;
     justify-content: center;
-    column-gap: 200px;
+    column-gap: 50px;
 }
 
 .moves{
     font-family: 'Handjet', cursive;
     font-size: 50px;
+    background-color: #FFFF00;
 }
 
 .btn{
@@ -53,4 +63,5 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #FFFF00;
 }
