@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+
+#all-result{
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+#all-moves{
+    display: flex;
+    justify-content: center;
+    column-gap: 500px;
+}
