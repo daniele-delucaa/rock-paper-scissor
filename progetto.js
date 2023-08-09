@@ -2,25 +2,41 @@ let mossa = ["carta", "sasso", "forbice"];
 
 let playerSelection = "";
 let computerSelection = "";
+//let string_result;
 computerSelection = getComputerChoice();
 
 const buttonRock = document.getElementById("btn-rock");
 const buttonPaper = document.getElementById("btn-paper");
 const buttonScissor = document.getElementById("btn-scissor");
 
+//"accediamo" al paragarafo p che verrà modificato (dove sovrascriveremo il risultato con la stringa ottenuta)
+let output = document.getElementById("result-string");
+//output.innerHTML = playRound(playerSelection, computerSelection);
+/*
+const risultato = document.createElement("p");
+const node = document.createTextNode(string_result);
+risultato.appendChild(node);
+const element = document.getElementById("string-div");
+element.appendChild(risultato);
+*/
+
+
 buttonRock.addEventListener("click", ()=>{
     playerSelection = buttonRock.textContent;
-    console.log(playRound(playerSelection, computerSelection));
+    //console.log(playRound(playerSelection, computerSelection));
+    output.innerHTML = playRound(playerSelection, computerSelection);
 })
 
 buttonPaper.addEventListener("click", ()=>{
     playerSelection = buttonPaper.textContent;
-    console.log(playRound(playerSelection, computerSelection));
+    //console.log(playRound(playerSelection, computerSelection));
+    output.innerHTML = playRound(playerSelection, computerSelection);
 })
 
 buttonScissor.addEventListener("click", ()=>{
     playerSelection = buttonScissor.textContent;
-    console.log(playRound(playerSelection, computerSelection));
+    //console.log(playRound(playerSelection, computerSelection));
+    output.innerHTML = playRound(playerSelection, computerSelection);
 })
 
 //game();

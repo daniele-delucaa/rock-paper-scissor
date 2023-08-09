@@ -50,7 +50,7 @@ p{
 .moves{
     font-family: 'Handjet', cursive;
     font-size: 50px;
-    background-color: #FFFF00;
+    background-color: #FFC72C;
 }
 
 .btn{
@@ -58,10 +58,15 @@ p{
     border-color: #111;
     border-width: 2px;
     border-radius: 16px;
-    width: 300px;
+    width: 200px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFFF00;
+    background-color: #FFC72C;
+}
+
+#string-div{
+    display: flex;
+    justify-content: center;
 }
