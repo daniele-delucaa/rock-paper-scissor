@@ -1,11 +1,24 @@
-h1{
-    text-align: center;
+h1{ color: #111; font-family: 'Open Sans Condensed', sans-serif; font-size: 64px; font-weight: 700; 
+    line-height: 64px; margin: 0 0 0; padding: 20px 30px; text-align: center; text-transform: uppercase; 
 }
 
 #all-result{
     display: flex;
     justify-content: center;
-    column-gap: 100px;
+    column-gap: 100px; 
+    
+}
+
+.result{
+    border-style: solid;
+    border-color: #111;
+    border-width: 2px;
+    border-radius: 16px;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #all-moves{
