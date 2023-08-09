@@ -41,6 +41,14 @@ p{
     font-size: 50px;
 }
 
+#computer-score, #computer-text{
+    background-color: #0a2351;
+}
+
+#player-score, #player-text{
+    background-color: #E23D28;
+}
+
 #all-moves{
     display: flex;
     justify-content: center;
