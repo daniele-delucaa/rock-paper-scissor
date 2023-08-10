@@ -77,4 +77,19 @@ p{
 #string-div{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 156px
+}
+
+#match{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    height: 100px;
+}
+
+#mossa-giocatore, #mossa-computer{
+    font-family: 'Handjet', cursive;
+    font-size: 50px;
 }
