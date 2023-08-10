@@ -6,7 +6,7 @@ let playerPoints = 0;
 let computerPoints = 0;
 let isFinished = false;
 //let string_result;
-computerSelection = getComputerChoice();
+//computerSelection = getComputerChoice();
 
 const buttonRock = document.getElementById("btn-rock");
 const buttonPaper = document.getElementById("btn-paper");
@@ -18,6 +18,10 @@ let output = document.getElementById("result-string");
 
 let mossaGiocatore = document.getElementById("mossa-giocatore");
 let mossaComputer = document.getElementById("mossa-computer");
+
+let stringaPuntiGiocatore = document.getElementById("player-text");
+let stringaPuntiComputer = document.getElementById("computer-text");
+
 //output.innerHTML = playRound(playerSelection, computerSelection);
 
 buttonRock.addEventListener("click", ()=>{
@@ -127,10 +131,12 @@ function setToZero(bool){
 }
 
 function getButton(){
+    computerSelection = getComputerChoice();
     output.innerHTML = playRound(playerSelection, computerSelection);
     mossaGiocatore.innerHTML = playerSelection;
     mossaComputer.innerHTML = computerSelection;
     isFinished = isFive(playerPoints, computerPoints)
     points = setToZero(isFinished)
-    //console.log(points[0], points[1], isFinished);
+    stringaPuntiGiocatore.innerHTML = "Player:" + points[0];
+    stringaPuntiComputer.innerHTML = "Computer:" + points[1];
 }
