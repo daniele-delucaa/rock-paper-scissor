@@ -11,6 +11,9 @@ const buttonScissor = document.getElementById("btn-scissor");
 
 //"accediamo" al paragarafo p che verrà modificato (dove sovrascriveremo il risultato con la stringa ottenuta)
 let output = document.getElementById("result-string");
+
+let mossaGiocatore = document.getElementById("mossa-giocatore");
+let mossaComputer = document.getElementById("mossa-computer");
 //output.innerHTML = playRound(playerSelection, computerSelection);
 /*
 const risultato = document.createElement("p");
@@ -25,18 +28,24 @@ buttonRock.addEventListener("click", ()=>{
     playerSelection = buttonRock.textContent;
     //console.log(playRound(playerSelection, computerSelection));
     output.innerHTML = playRound(playerSelection, computerSelection);
+    mossaGiocatore.innerHTML = playerSelection;
+    mossaComputer.innerHTML = computerSelection;
 })
 
 buttonPaper.addEventListener("click", ()=>{
     playerSelection = buttonPaper.textContent;
     //console.log(playRound(playerSelection, computerSelection));
     output.innerHTML = playRound(playerSelection, computerSelection);
+    mossaGiocatore.innerHTML = playerSelection;
+    mossaComputer.innerHTML = computerSelection;
 })
 
 buttonScissor.addEventListener("click", ()=>{
     playerSelection = buttonScissor.textContent;
     //console.log(playRound(playerSelection, computerSelection));
     output.innerHTML = playRound(playerSelection, computerSelection);
+    mossaGiocatore.innerHTML = playerSelection;
+    mossaComputer.innerHTML = computerSelection;
 })
 
 //game();
