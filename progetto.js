@@ -42,6 +42,19 @@ buttonScissor.addEventListener("click", ()=>{
     getButton();
 })
 
+/*buttonReset.addEventListener("click", ()=>{
+    playerPoints = 0;
+    computerPoints = 0;
+    isFinished = false;
+    output.innerHTML = playRound(playerSelection, computerSelection);
+    mossaGiocatore.innerHTML = ;
+    mossaComputer.innerHTML = computerSelection;
+    isFinished = isFive(playerPoints, computerPoints)
+    points = setToZero(isFinished)
+    stringaPuntiGiocatore.innerHTML = "Player:" + points[0];
+    stringaPuntiComputer.innerHTML = "Computer:" + points[1];
+})*/
+
 //game();
 
 //funzione che ritorna la mossa (in modo casuale) del computer
