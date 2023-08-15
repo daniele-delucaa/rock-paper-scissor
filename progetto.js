@@ -42,18 +42,16 @@ buttonScissor.addEventListener("click", ()=>{
     getButton();
 })
 
-/*buttonReset.addEventListener("click", ()=>{
+buttonReset.addEventListener("click", ()=>{
+    mossaGiocatore.innerHTML = "";
+    mossaComputer.innerHTML = "";
+    output.innerHTML = "";
     playerPoints = 0;
     computerPoints = 0;
-    isFinished = false;
-    output.innerHTML = playRound(playerSelection, computerSelection);
-    mossaGiocatore.innerHTML = ;
-    mossaComputer.innerHTML = computerSelection;
-    isFinished = isFive(playerPoints, computerPoints)
-    points = setToZero(isFinished)
+    points = [0, 0]
     stringaPuntiGiocatore.innerHTML = "Player:" + points[0];
     stringaPuntiComputer.innerHTML = "Computer:" + points[1];
-})*/
+})
 
 //game();
 
@@ -153,3 +151,4 @@ function getButton(){
     stringaPuntiGiocatore.innerHTML = "Player:" + points[0];
     stringaPuntiComputer.innerHTML = "Computer:" + points[1];
 }
+
