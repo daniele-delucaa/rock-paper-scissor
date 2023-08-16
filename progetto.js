@@ -27,18 +27,21 @@ let stringaPuntiComputer = document.getElementById("computer-text");
 buttonRock.addEventListener("click", ()=>{
     playerSelection = buttonRock.textContent;
     //console.log(playRound(playerSelection, computerSelection));
+    reset();
     getButton();
 })
 
 buttonPaper.addEventListener("click", ()=>{
     playerSelection = buttonPaper.textContent;
     //console.log(playRound(playerSelection, computerSelection));
+    reset();
     getButton();
 })
 
 buttonScissor.addEventListener("click", ()=>{
     playerSelection = buttonScissor.textContent;
     //console.log(playRound(playerSelection, computerSelection));
+    reset();
     getButton();
 })
 
@@ -53,6 +56,18 @@ buttonReset.addEventListener("click", ()=>{
     stringaPuntiComputer.innerHTML = "Computer:" + points[1];
 })
 
+function reset(){
+    if (playerPoints == 3 || computerPoints == 3){
+        mossaGiocatore.innerHTML = "";
+        mossaComputer.innerHTML = "";
+        output.innerHTML = "";
+        playerPoints = 0;
+        computerPoints = 0;
+        points = [0, 0]
+        stringaPuntiGiocatore.innerHTML = "Player:" + points[0];
+        stringaPuntiComputer.innerHTML = "Computer:" + points[1];
+    }
+}
 //game();
 
 //funzione che ritorna la mossa (in modo casuale) del computer
