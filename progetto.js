@@ -81,7 +81,7 @@ function getComputerChoice(){
 function playRound(playerSelection, computerSelection){
     var string_result;
     if (computerSelection == playerSelection){
-        string_result = "Pareggio";
+        string_result = "Draw";
         return string_result;
     } else if (playerSelection == "carta"){
         switch(computerSelection){
