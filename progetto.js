@@ -1,4 +1,4 @@
-let mossa = ["carta", "sasso", "forbice"];
+let mossa = ["paper", "rock", "scissor"];
 
 let playerSelection = "";
 let computerSelection = "";
@@ -83,36 +83,36 @@ function playRound(playerSelection, computerSelection){
     if (computerSelection == playerSelection){
         string_result = "Draw";
         return string_result;
-    } else if (playerSelection == "carta"){
+    } else if (playerSelection == "paper"){
         switch(computerSelection){
-        case "sasso":
-            string_result = "Hai vinto! Carta batte sasso";
+        case "rock":
+            string_result = "You won! Paper beats rock";
             playerPoints++
             break;
-        case "forbice":
-            string_result = "Hai Perso! Forbice batte carta";
+        case "scissor":
+            string_result = "You lost! Scissor beats paper";
             computerPoints++
             break;
         }
-    } else if (playerSelection == "sasso"){
+    } else if (playerSelection == "rock"){
         switch(computerSelection){
-        case "forbice":
-            string_result = "Hai vinto! Sasso batte forbice";
+        case "scissor":
+            string_result = "You won! Rock beats scissor";
             playerPoints++
             break;
-        case "carta":
-            string_result = "Hai Perso! Carta batte sasso";
+        case "paper":
+            string_result = "You lost! Paper beats rock";
             computerPoints++
             break;
         }
     } else {
         switch(computerSelection){
-        case "carta":
-            string_result = "Hai vinto! Forbice batte carta";
+        case "paper":
+            string_result = "You won! Scissor beats paper";
             playerPoints++
             break;
-        case "sasso":
-            string_result = "Hai Perso! Sasso batte forbice";
+        case "rock":
+            string_result = "You lost! Rock beats scissor";
             computerPoints++
             break;
         }
